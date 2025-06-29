@@ -1,0 +1,72 @@
+/* Custom CSS to remove the space left by static ranges */
+.rdrDefinedRangesWrapper,
+.rdrMonthAndYearPickers {
+  display: none;
+}
+
+.rdrDateRangePickerWrapper {
+  width: -webkit-fill-available;
+}
+
+.rdrMonthsHorizontal,
+.rdrCalendarWrapper,
+.rdrDateRangeWrapper {
+  width: 100% !important;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  /* box-shadow: 0px 1px 2px 0px rgba(0, 14, 51, 0.25); */
+}
+.rdrMonth {
+  width: 100%;
+}
+.rdrDayDisabled {
+  background-color: inherit;
+}
+.rdrMonthAndYearWrapper {
+  height: 0px;
+}
+.rdrNextPrevButton,
+.rdrPprevButton {
+  background-color: white;
+  z-index: 40;
+  margin-top: 75px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.rdrMonthName {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+.rdrDay {
+  font-size: 16px;
+  color: var(--primary);
+  border-radius: 2px;
+  padding: 10px;
+  /* background-color: aliceblue; */
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span {
+  color: var(--primary);
+}
+.rdrWeekDay {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+.rdrInRange {
+  background-color: var(--primary-bg);
+  color: var(--primary) !important;
+}
+
+.rdrStartEdge {
+  border-radius: 16px 0px 0px 16px;
+  background-color: var(--primary);
+}
+
+.rdrEndEdge {
+  border-radius: 0px 16px 16px 0px;
+  background-color: var(--primary);
+}
